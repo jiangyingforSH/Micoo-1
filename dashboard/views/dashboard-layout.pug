@@ -19,7 +19,7 @@ html(lang="en")
         // Bootstrap Javascript
         script(src="/public/javascript/jquery-3.5.1.slim.min.js" crossorigin="anonymous")
         script(src="/public/javascript/bootstrap.bundle.min.js" crossorigin="anonymous")
-        title Micoo
+        title 魔法之眼
         style.
             .bd-placeholder-img {
                 font-size: 1.125rem;
@@ -60,18 +60,14 @@ html(lang="en")
                     .col-sm-4.offset-md-1.py-4
                         h4.text-white Project
                         ul.list-unstyled
-                              li
-                                p.font-weight-lighter.text-muted welcome to provide feedback on the project home page, and thanks for your Star if you like Micoo
-                              li
-                                a.text-white(href='https://github.com/Mikuu/Micoo')
-                                  ion-icon(size='large' name='logo-github')
+                              
         .navbar.navbar-dark.bg-dark.shadow-sm.navbar-justify
             .container.d-flex.justify-content-between
                 a.navbar-brand.d-flex.align-items-center(href="/")
                     h2 Micoo
                 .pl-2.pr-2.d-flex
-                    button.navbar-toggler.collapsed(type='button' data-toggle='collapse' data-target='#navbarHeader' aria-controls='navbarHeader' aria-expanded='false' aria-label='Toggle navigation')
-                        ion-icon(name='grid-outline')
+                    //- button.navbar-toggler.collapsed(type='button' data-toggle='collapse' data-target='#navbarHeader' aria-controls='navbarHeader' aria-expanded='false' aria-label='Toggle navigation')
+                    //-     ion-icon(name='grid-outline')
                     form.ml-3.mb-0.align-self-center(action='/auth/logout' method='post')
                         button#log-out-outline.navbar-toggler.collapsed(type='submit')
                             ion-icon(name='log-out-outline')
@@ -82,4 +78,4 @@ html(lang="en")
     script(src="/public/javascript/bs-custom-file-input.min.js")
     footer.text-muted.text-center.font-weight-light
         .container
-            p save your time by automation, spend it more in exploring
+            p 魔法之眼是一个截图像素比较服务，主要由:Native-image-diff, ExpressJS, Bootstrap, Pug, MongoDB等许多组件完成。

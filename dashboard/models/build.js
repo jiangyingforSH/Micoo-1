@@ -12,9 +12,9 @@ const BuildSchema = new Schema({
     pid: { type: String, default: "", trim: true, maxlength: 50 },
     bid: { type: String, default: "", trim: true, maxlength: 50 },
     // passed, failed, undetermined
-    buildResult: { type: String, default: "undetermined", trim: true, maxlength: 15 },
+    buildResult: { type: String, default: "等待判断", trim: true, maxlength: 15 },
     // processing, completed
-    buildStatus: { type: String, default: "processing", trim: true, maxlength: 10 },
+    buildStatus: { type: String, default: "处理中", trim: true, maxlength: 10 },
     buildVersion: { type: String, default: "", trim: true, maxlength: 50 },
     buildIndex: { type: Number, default: 0 },
     isBaseline: { type: Boolean, default: false },

@@ -4,7 +4,7 @@ block body
     main(role="main")
         section.jumbotron.text-center
             .container
-                h1 Visual Testing service Dashboard
+                h1 视觉测试-服务控制台
                 p.lead.text-muted.mt-4
                     | #{dashboardContent}
         .album.py-5.bg-light
@@ -24,7 +24,7 @@ block body
                                                 i.fa.fa-plus-circle.fa-5x.border.border-white.rounded-circle.bg-white.icon-new(aria-hidden="true")
                             .d-flex.justify-content-center
                                 .w-50
-                                    p.p-FBI.text-center input project name to create a new project
+                                    p.p-FBI.text-center 请输入一个项目名称，以此创建项目
 
                     each project in projects
                         .col-md-4.card-height.mb-5
@@ -37,7 +37,7 @@ block body
                                 .card-body
                                     div
                                         .d-flex.w-100.justify-content-between
-                                            p.font-weight-light Latest build result
+                                            p.font-weight-light 最后构建返回信息
 
                                             case project.latestBuildResult
                                                 when "passed"
@@ -48,9 +48,9 @@ block body
                                                     small.text-info(style="padding-top: 4px;") #{project.latestBuildResult}
 
                                         .d-flex.w-100.justify-content-between
-                                            p.font-weight-light Latest build time
+                                            p.font-weight-light 最后的构建时间
                                             small.text-muted(style="padding-top: 4px;") #{project.latestBuildTime}
                                         .d-flex.w-100.justify-content-between
-                                            p.font-weight-light Total builds number
+                                            p.font-weight-light 最后的构建编号
                                             small.text-muted(style="padding-top: 4px;") #{project.totalBuildsNumber}
 

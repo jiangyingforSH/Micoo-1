@@ -55,12 +55,12 @@ CaseSchema.path("cid").required(true, "cid cannot be blank");
 
 CaseSchema.methods = {
     passCase: function() {
-        this.caseResult = "passed";
+        this.caseResult = "通过";
         return this.save();
     },
 
     failCase: function() {
-        this.caseResult = "failed";
+        this.caseResult = "失败";
         return this.save();
     },
 
