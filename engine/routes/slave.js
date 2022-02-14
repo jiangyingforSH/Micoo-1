@@ -79,6 +79,11 @@ router.post("/build/initialize", authenticateAPIKey, function(req, res, next) {
     })();
 });
 
+router.post("/result",authenticateAPIKey,function(req, res, next){
+    (async () => {
+    
+    })();
+})
 /**
  * Upload project test screenshots, save all screenshots to the project's latest folder
  * */
